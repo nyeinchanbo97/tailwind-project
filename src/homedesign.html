@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+       <!-- home page (bmi Calculation)  -->
+       <div class="container mx-auto h-auto bg-slate-200 mt-[80px] flex flex-wrap flex-row gap-1 justify-center homeDesign">
+           
+       </div>
+
+       <!-- // Home design 
+
+       const homeDesign =document.getElementsByClassName("homeDesign")[0];
+       
+       const homeDesignFunction1 = ()=>{
+           for(let i=0; i<210; i++){
+       
+               const homeDesignSon1 = `
+               <div class="w-[57px] h-[57px] bg-slate-300 ${i}">
+                   <h1></h1>
+               </div> `;
+       
+                 
+               const homeDesignSon2 = `
+               <div class="w-[57px] h-[57px] bg-slate-600 ${i}">
+                   <h1></h1>
+               </div> `;
+           
+           
+                   if(i%2 === 0){
+                       homeDesign.innerHTML += homeDesignSon1;       
+                   }else{
+                       homeDesign.innerHTML += homeDesignSon2;       
+               
+                   }
+            
+           }
+       
+       }
+       
+       const homeDesignFunction2 = ()=>{
+           for(let i=0; i<210; i++){
+       
+               const homeDesignSon1 = `
+               <div class="w-[57px] h-[57px] bg-slate-300 ${i}">
+                   <h1></h1>
+               </div> `;
+           
+               const homeDesignSon2 = `
+               <div class="w-[57px] h-[57px] bg-slate-600 ${i}">
+                   <h1></h1>
+               </div> `;
+           
+       
+                   if(i%2 === 0){
+                       homeDesign.innerHTML += homeDesignSon2;       
+                   }else{
+                       homeDesign.innerHTML += homeDesignSon1;       
+               
+                   }
+           }
+       
+       }
+       
+       window.addEventListener("load",()=>{
+       
+               homeDesignFunction1()
+       
+           setTimeout(() => {
+               homeDesign.innerHTML = "";
+               homeDesignFunction2();
+               setInterval(() => {
+                   location.reload();
+               }, 1000);
+           }, 1000);
+       })
+        -->
+   
+</body>
+</html>
