@@ -33,7 +33,7 @@
                         <li class="border border-slate-600 px-2 py-1 rounded-xl hover:bg-slate-100"><a href="#">BMI Calculation</a></li>
 
                         <!-- dropdown btn  -->
-                        <li class="border border-slate-600 px-2 py-1 rounded-xl hover:bg-slate-100 naviDropdownBtn cursor-pointer flex items-center gap-1">Knowledge Sharing 
+                        <li class="border border-slate-600 px-2 py-1 rounded-xl hover:bg-slate-100 naviDropdownBtn cursor-pointer flex items-center gap-1 select-none">Knowledge Sharing 
                             <span class="naviDropdownBtnLogo transition-all duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
                             </span>
@@ -176,7 +176,7 @@
                                         <div class="bmi-result w-[60%] h-[35px] border border-gray-300 rounded-lg bg-white flex justify-center items-center font-semibold opacity-0 absolute left-[20%] top-[20px] max-sm:w-[80%] max-sm:left-[10%]  transition-all duration-500 ring-4 ring-gray-200"></div>
                                     </div>
                                     <!-- side caption with position absolute in baby first child, not concern with calculation table and method ui -->
-                                    <div class="slideCaption w-[40px] h-[200px] bg-slate-200 border border-slate-600 rounded-xl 
+                                    <div class="slideCaption select-none w-[40px] h-[200px] bg-slate-200 border border-slate-600 rounded-xl 
                                     absolute left-[-50px] top-[60px]
                                     flex flex-col-reverse justify-start items-center">
                                         <h1 class="p-0 m-0 -rotate-90 font-semibold">S</h1>
@@ -209,7 +209,7 @@
                                         <div class="bmi-result-kg w-[60%] h-[35px] border border-gray-300 rounded-lg bg-white flex justify-center items-center font-semibold opacity-0 absolute left-[20%] top-[20px] max-sm:w-[80%] max-sm:left-[10%]  transition-all duration-500 ring-4 ring-gray-200"></div>
                                     </div>
                                     <!-- side caption with position absolute in baby first child, not concern with calculation table and method ui -->
-                                    <div class="slideCaption w-[40px] h-[200px] bg-slate-200 border border-slate-600 rounded-xl 
+                                    <div class="slideCaption select-none w-[40px] h-[200px] bg-slate-200 border border-slate-600 rounded-xl 
                                     absolute left-[-50px] top-[60px]
                                     flex flex-col-reverse justify-center items-center">
                                         <h1 class="p-0 m-0 -rotate-90 font-semibold">M</h1>
@@ -234,145 +234,70 @@
             </div>       
             </div>
 
+
+
+
+
+
+
     <!-- BMI Knowledge and weight loss plans  -->
-            <div class="container mx-auto h-[550px] mt-[10px] ">
+            <div class="container mx-auto h-[550px] max-lg:h-[950px] mt-[10px] max-lg:border max-lg:border-slate-600 max-lg:rounded-xl max-lg:bg-slate-200 ">
                 <!-- flex start  -->
-                <div class="w-full h-full flex flex-row">
+                <div class="w-full h-full flex flex-row max-lg:flex-col">
 
                     <!-- main first child  -->
-                    <div class="basis-2/12 bg-slate-200 mx-4 my-2 rounded-2xl border border-slate-600">
-                        <div class="w-full h-full flex flex-col justify-center items-start px-2 gap-5">
+                    <div class="basis-2/12  lg:bg-slate-200 mx-4 max-lg:m-0 my-2 rounded-2xl max-lg:border-0 border border-slate-600 main-bmi-note opacity-0 -translate-y-10 transition-all duration-500  max-lg:overflow-x-scroll">
 
-                            <button type="button" class="text-gray-900 bg-slate-100 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2 flex items-center gap-1">Be Physically Active
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi                bi-chevron-double-right" viewBox="0 0 16 16">
+
+                        <div class="max-lg:w-[800px] w-full h-full max-lg:h-auto flex flex-col max-lg:flex-row max-lg:items-center justify-center items-start px-2 gap-5 max-lg:gap-1 max-lg:border-b-4
+                         max-lg:border-b-slate-600 max-lg:mt-[40px] ">
+
+                           <div class="w-[190px] flex items-center justify-center">
+                            <button type="button" class="bmi-related-note-btn hover:text-red-700 w-full hover:translate-x-1 transition-all duration-300 text-blue-700 underline bg-slate-100 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2 flex flex-row items-center gap-1">Be Physically Active
+                                <svg class="max-lg:rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi                bi-chevron-double-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
                                     <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
                                 </svg>
                             </button>
+                           </div>
 
-                            <button type="button" class="text-gray-900 bg-slate-100 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2 flex items-center gap-1">Control Your Weight
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi                bi-chevron-double-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                </svg>
-                            </button>
+                            <div class="w-[190px] flex items-center justify-center">
+                                <button type="button" class="bmi-related-note-btn hover:text-red-700 w-full hover:translate-x-1 transition-all duration-300 text-blue-700 underline bg-slate-100 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2 flex flex-row items-center gap-1">Control Your Weight
+                                    <svg class="max-lg:rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi                bi-chevron-double-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </button>
+                            </div>
                             
-                            <button type="button" class="text-gray-900 bg-slate-100 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2 flex items-center gap-1">Eat Right
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi                bi-chevron-double-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                </svg>
-                            </button>
+                            <div class="w-[190px] flex items-center justify-center">
+                                <button type="button" class="bmi-related-note-btn hover:text-red-700 w-full hover:translate-x-1 transition-all duration-300 text-blue-700 underline bg-slate-100 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2 flex flex-row items-center gap-1">Eat Right Food
+                                    <svg class="max-lg:rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi                bi-chevron-double-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </button>
+                            </div>
 
-                            <button type="button" class="text-gray-900 bg-slate-100 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2 flex items-center gap-1"> Recommendations
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi                bi-chevron-double-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                </svg>
-                            </button>
+                            <div class="w-[190px] flex items-center justify-center">
+                                <button type="button" class="bmi-related-note-btn hover:text-red-700 w-full hover:translate-x-1 transition-all duration-300 text-blue-700 underline bg-slate-100 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-3 py-2.5 mr-2 mb-2 flex flex-row items-center gap-1"> Recommendations
+                                    <svg class="max-lg:rotate-90" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi                bi-chevron-double-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </button>
+                            </div>
                             
                         </div>
                     </div>
 
                     <!-- main second child  -->
-                    <div class="basis-10/12 bg-slate-200 mx-4 my-2 rounded-2xl border border-slate-600 relative">
-
-                        <!-- Control your weight start  -->
-                        <div class="bmi-related-note opacity-0 w-full h-full rounded-2xl border absolute">
-                            <!-- main flex  -->
-                            <div class="w-full h-full flex flex-row">
-
-                                <!-- first child  -->
-                                <div class="basis-4/6 flex flex-col">
-                                    <!-- baby first child  -->
-                                    <div class="basis-2/6 flex items-center justify-center">
-                                        <img class="rounded-t-xl" src="../img/exe.jpg" alt="">
-                                    </div>
-                                    <!-- baby second child  -->
-                                    <div class="basis-4/6 relative">
-                                        <div class="w-[90%] h-[90%] absolute left-[5%] border border-slate-600 bg-slate-100 rounded-xl p-5 pt-12">
-                                            <h1 class="font-bold text-blue-950 text-lg mb-1">Control Your Weight</h1>
-                                            <p>Changing the way you approach weight loss can help you be more successful at weight management. Most people who are trying to lose weight focus on just the goal of weight loss. However, setting the right goals and focusing on lifestyle changes such as following a healthy eating plan, watching portion sizes, being physically active, and reducing sedentary time are much more effective.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- second child  -->
-                                <div class="basis-2/6 flex flex-col">
-
-                                    <!-- baby first child  -->
-                                    <div class="basis-2/5 relative">
-                                        <img class="w-[80%] h-[80%] absolute left-[10%] top-[15%] rounded-xl" src="../img/baby.jpg" alt="">
-                                    </div>
-
-                                    <!-- baby second child  -->
-                                    <div class="basis-3/5 relative">
-                                        <div class="w-[90%] h-auto absolute left-[5%] top-[10%] border border-slate-600 border-b-4 bg-slate-100 rounded-xl p-5">
-                                            <h1 class="font-bold text-blue-950 mb-2">Healthy Weight Tip</h1>
-                                            <p class="text-sm">Did you know that a reasonable and safe weight loss is 1–2 pounds per week? While it may take as long as 6 months to lose 5–10 percent of your body weight, it will make it easier to keep off the weight.</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <!-- Control your weight end  -->
-
-                        <!-- Eat right start  -->
-                        <div class="bmi-related-note opacity-0 w-full h-full rounded-2xl border absolute">
-                            <!-- main flex  -->
-                            <div class="w-full h-full flex flex-row">
-
-                                <!-- first child  -->
-                                <div class="basis-4/6 flex flex-col">
-                                    <!-- baby first child  -->
-                                    <div class="basis-2/6 flex items-center justify-center">
-                                        <img class="rounded-t-xl" src="../img/eatlogo.jpg" alt="">
-                                    </div>
-                                    <!-- baby second child  -->
-                                    <div class="basis-4/6 relative">
-                                        <div class="w-[90%] h-[90%] absolute left-[5%] border border-slate-600 bg-slate-100 rounded-xl p-5 pt-12">
-                                            <h1 class="font-bold text-blue-800 text-lg mb-1">Eat Right</h1>
-                                            <p>To lose weight, it's important to make lifestyle changes with a focus on reducing calories from food and beverages, a healthy eating plan, and portion control. This section will provide you with guidance and tools on how to eat right. Over time, these changes will become part of your everyday routine.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- second child  -->
-                                <div class="basis-2/6 flex flex-col">
-
-                                    <!-- baby first child  -->
-                                    <div class="basis-2/5 relative">
-                                        <div class="w-[90%] h-auto absolute left-[5%] top-[15%] border border-slate-600 border-b-4 bg-slate-100 rounded-xl p-3">
-                                            <h1 class="font-bold text-blue-800 mb-1">Healthy Weight Tip</h1>
-                                            <p class="text-sm">Did you know that a portion is different from a serving of food? A portion is the amount of food (big or small) you choose to eat. A serving is a measured amount of food or drink.</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- baby second child  -->
-                                    <div class="basis-3/5 relative">
-                                        <div class="w-[90%] h-auto absolute left-[5%] top-[10%] border border-slate-600 border-b-4 bg-slate-100 rounded-xl p-3">
-                                            <h1 class="font-bold text-blue-800 mb-1">A healthy eating plan:</h1>
-                                            <p class="mb-2 text-sm"><strong>E</strong>mphasizes vegetables, fruits, whole grains, and fat-free or low-fat dairy products.</p>
-                                            <p class="mb-2 text-sm"><strong>I</strong>ncludes lean meats, poultry, fish, beans, eggs, and nuts.</p>
-                                            <p class="mb-2 text-sm"><strong>L</strong>imits saturated and trans fats, sodium, and added sugars.</p> 
-                                            <p class="mb-2 text-sm"><strong>C</strong>ontrols portion sizes</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <!-- Eat right end  -->
+                    <div class="basis-10/12  bg-slate-200 mx-4 my-2 rounded-2xl border border-slate-600 relative main-bmi-note opacity-0 translate-y-10 transition-all duration-500">
 
                         <!-- Be physically active start  -->
-                        <div class="bmi-related-note  w-full h-full rounded-2xl border absolute">
+                        <div class="bmi-related-note clicked  w-full h-full rounded-2xl border absolute transition-all ">
                             <!-- main flex  -->
-                            <div class="w-full h-full flex flex-row">
+                            <div class="w-full h-full flex flex-row max-lg:flex-col">
 
                                 <!-- first child  -->
                                 <div class="basis-4/6 flex flex-col">
@@ -392,16 +317,16 @@
                                 </div>
 
                                 <!-- second child  -->
-                                <div class="basis-2/6 flex flex-col">
+                                <div class="basis-2/6 flex flex-col max-lg:flex-row">
 
                                     <!-- baby first child  -->
-                                    <div class="basis-2/5 relative">
-                                        <img class="w-[80%] h-[80%] absolute left-[10%] top-[15%] rounded-xl" src="../img/exercise1.jpg" alt="">
+                                    <div class="basis-2/5 max-lg:basis-3/5 relative">
+                                        <img class="w-[80%] h-[80%] absolute left-[10%] top-[15%] max-lg:top-[10%] rounded-xl" src="../img/exercise1.jpg" alt="">
                                     </div>
 
                                     <!-- baby second child  -->
-                                    <div class="basis-3/5 relative">
-                                        <div class="w-[90%] h-auto absolute left-[5%] top-[10%] border border-slate-600 border-b-4 bg-slate-100 rounded-xl p-5 pt-7">
+                                    <div class="basis-3/5 max-lg:basis-2/5 relative">
+                                        <div class="w-[90%] h-auto absolute left-[5%] top-[10%] max-lg:top-[5%] border border-slate-600 border-b-4 bg-slate-100 rounded-xl p-5 pt-7">
                                             <h1 class="font-bold text-blue-950 mb-3">Healthy Weight Tip</h1>
                                             <p class="text-sm">Speak to your doctor before starting a physical activity program if you have a health problem such as heart disease, high blood pressure, diabetes, or asthma.</p>
                                         </div>
@@ -414,10 +339,102 @@
                         </div>
                         <!-- Be physically active end  -->
 
-                        <!-- Key recommendations start  -->
-                        <div class="bmi-related-note opacity-0 w-full h-full rounded-2xl border absolute">
+                        <!-- Control your weight start  -->
+                        <div class="bmi-related-note opacity-0 pointer-events-none w-full h-full rounded-2xl border absolute transition-all ">
                             <!-- main flex  -->
-                            <div class="w-full h-full flex flex-row">
+                            <div class="w-full h-full flex flex-row max-lg:flex-col">
+
+                                <!-- first child  -->
+                                <div class="basis-4/6 flex flex-col">
+                                    <!-- baby first child  -->
+                                    <div class="basis-2/6 flex items-center justify-center">
+                                        <img class="rounded-t-xl" src="../img/exe.jpg" alt="">
+                                    </div>
+                                    <!-- baby second child  -->
+                                    <div class="basis-4/6 relative">
+                                        <div class="w-[90%] h-[90%] absolute left-[5%] border border-slate-600 bg-slate-100 rounded-xl p-5 pt-12">
+                                            <h1 class="font-bold text-blue-950 text-lg mb-1">Control Your Weight</h1>
+                                            <p>Changing the way you approach weight loss can help you be more successful at weight management. Most people who are trying to lose weight focus on just the goal of weight loss. However, setting the right goals and focusing on lifestyle changes such as following a healthy eating plan, watching portion sizes, being physically active, and reducing sedentary time are much more effective.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- second child  -->
+                                <div class="basis-2/6 flex flex-col max-lg:flex-row">
+
+                                    <!-- baby first child  -->
+                                    <div class="basis-2/5 max-lg:basis-3/5 relative">
+                                        <img class="w-[80%] h-[80%] absolute left-[10%] top-[15%] max-lg:top-[10%] rounded-xl" src="../img/baby.jpg" alt="">
+                                    </div>
+
+                                    <!-- baby second child  -->
+                                    <div class="basis-3/5 max-lg:basis-2/5 relative">
+                                        <div class="w-[90%] h-auto absolute left-[5%] top-[10%] max-lg:top-[5%] border border-slate-600 border-b-4 bg-slate-100 rounded-xl p-5">
+                                            <h1 class="font-bold text-blue-950 mb-2">Healthy Weight Tip</h1>
+                                            <p class="text-sm">Did you know that a reasonable and safe weight loss is 1–2 pounds per week? While it may take as long as 6 months to lose 5–10 percent of your body weight, it will make it easier to keep off the weight.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- Control your weight end  -->
+
+                        <!-- Eat right start  -->
+                        <div class="bmi-related-note opacity-0 pointer-events-none w-full h-full rounded-2xl border absolute transition-all ">
+                            <!-- main flex  -->
+                            <div class="w-full h-full flex flex-row max-lg:flex-col">
+
+                                <!-- first child  -->
+                                <div class="basis-4/6 flex flex-col">
+                                    <!-- baby first child  -->
+                                    <div class="basis-2/6 flex items-center justify-center">
+                                        <img class="rounded-t-xl" src="../img/eatlogo.jpg" alt="">
+                                    </div>
+                                    <!-- baby second child  -->
+                                    <div class="basis-4/6 relative">
+                                        <div class="w-[90%] h-[90%] absolute left-[5%] border border-slate-600 bg-slate-100 rounded-xl p-5 pt-12">
+                                            <h1 class="font-bold text-blue-800 text-lg mb-1">Eat Right</h1>
+                                            <p>To lose weight, it's important to make lifestyle changes with a focus on reducing calories from food and beverages, a healthy eating plan, and portion control. This section will provide you with guidance and tools on how to eat right. Over time, these changes will become part of your everyday routine.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- second child  -->
+                                <div class="basis-2/6 flex flex-col max-lg:flex-row">
+
+                                    <!-- baby first child  -->
+                                    <div class="basis-2/5 relative">
+                                        <div class="w-[90%] h-auto absolute left-[5%] top-[15%] border border-slate-600 border-b-4 bg-slate-100 rounded-xl p-3">
+                                            <h1 class="font-bold text-blue-800 mb-1">Healthy Weight Tip</h1>
+                                            <p class="text-sm">Did you know that a portion is different from a serving of food? A portion is the amount of food (big or small) you choose to eat. A serving is a measured amount of food or drink.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- baby second child  -->
+                                    <div class="basis-3/5 relative">
+                                        <div class="w-[90%] h-auto absolute left-[5%] top-[10%] max-lg:top-[5%] border border-slate-600 border-b-4 bg-slate-100 rounded-xl p-3">
+                                            <h1 class="font-bold text-blue-800 mb-1">A healthy eating plan:</h1>
+                                            <p class="mb-2 text-sm"><strong>E</strong>mphasizes vegetables, fruits, whole grains, and fat-free or low-fat dairy products.</p>
+                                            <p class="mb-2 text-sm"><strong>I</strong>ncludes lean meats, poultry, fish, beans, eggs, and nuts.</p>
+                                            <p class="mb-2 text-sm"><strong>L</strong>imits saturated and trans fats, sodium, and added sugars.</p> 
+                                            <p class="mb-2 text-sm"><strong>C</strong>ontrols portion sizes</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- Eat right end  -->
+
+                        <!-- Key recommendations start  -->
+                        <div class="bmi-related-note opacity-0 pointer-events-none w-full h-full rounded-2xl border absolute transition-all ">
+                            <!-- main flex  -->
+                            <div class="w-full h-full flex flex-row max-lg:flex-col">
 
                                 <!-- first child  -->
                                 <div class="basis-4/6 flex flex-col">
@@ -456,16 +473,16 @@
                                 </div>
 
                                 <!-- second child  -->
-                                <div class="basis-2/6 flex flex-col">
+                                <div class="basis-2/6 flex flex-col max-lg:flex-row">
 
                                     <!-- baby first child  -->
-                                    <div class="basis-2/5 relative">
+                                    <div class="basis-2/5 max-lg:basis-3/5 relative">
                                         <img class="w-[80%] h-[80%] absolute left-[10%] top-[15%] rounded-xl" src="../img/book.jpg" alt="">
                                     </div>
 
                                     <!-- baby second child  -->
-                                    <div class="basis-3/5 relative">
-                                        <div class="w-[90%] h-auto absolute left-[5%] top-[10%] border border-slate-600 border-b-4 bg-slate-100 rounded-xl p-5 ">
+                                    <div class="basis-3/5 max-lg:basis-2/5 relative">
+                                        <div class="w-[90%] h-auto absolute left-[5%] top-[10%] max-lg:top-[-5%] border border-slate-600 border-b-4 bg-slate-100 rounded-xl p-5 ">
                                             <h1 class="font-bold text-blue-950 mb-2">Healthy Weight Tip</h1>
                                             <p class="text-sm">The combination of a reduced-calorie diet and increased physical activity is recommended, because it produces weight loss that also may result in decreases in abdominal fat and increases in cardiorespiratory fitness</p>
                                         </div>

@@ -190,6 +190,33 @@ const calculationStandard = document.getElementsByClassName(
   });
 
 
+
+//   bmi related note showing and hiding 
+
+const bmiRelatedNoteBtn = document.getElementsByClassName("bmi-related-note-btn");
+const bmiRelatedNote = document.getElementsByClassName("bmi-related-note");
+
+
+for (let i=0; i<4; i++){
+    bmiRelatedNoteBtn[i].addEventListener("click",()=>{
+
+
+        const clicked = document.getElementsByClassName("clicked")[0];
+        clicked.style.transitionDuration = "700ms";
+        clicked.style.opacity = "0";
+        clicked.style.pointerEvents = "none"
+        clicked.classList.remove("clicked");
+            
+        bmiRelatedNote[i].style.transitionDuration = "1200ms";
+        bmiRelatedNote[i].style.opacity = "1";
+        bmiRelatedNote[i].style.pointerEvents = "all";
+        bmiRelatedNote[i].classList.add("clicked");
+        
+       
+    })
+}
+
+
 // bmi window events 
 
   const bmiLoadAnimation = document.getElementsByClassName("bmiLoadAnimation");
@@ -233,4 +260,25 @@ const calculationStandard = document.getElementsByClassName(
         metric_btn.style.bottom = "10px";
     }, 2200);
 })
+
+
+const mainBmiNote = document.getElementsByClassName("main-bmi-note");
+
+const scrollFunction2 = ()=>{
+    if (document.documentElement.scrollTop > 150){
+        mainBmiNote[0].style.opacity = "1";
+        mainBmiNote[0].style.transform = "translateY(0)"
+        mainBmiNote[1].style.opacity = "1";
+        mainBmiNote[1].style.transform = "translateY(0px)"
+
+    }else{
+        mainBmiNote[0].style.opacity = "0";
+        mainBmiNote[0].style.transform = "translateY(-40px)"
+        mainBmiNote[1].style.opacity = "0";
+        mainBmiNote[1].style.transform = "translateY(40px)"
+    }
+}
+window.onscroll = function() {scrollFunction2()};
+
+
 
