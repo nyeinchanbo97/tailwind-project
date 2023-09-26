@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.a{
-    transform: translateX();
+@layer components {
+    .nav-li-style{
+        @apply border border-slate-600 px-2 py-1 rounded-xl hover:bg-slate-100
+    };
+    .nav-drop-li-style{
+        @apply border border-slate-600 px-2  py-1 rounded-xl hover:bg-slate-100 cursor-pointer
+    };
+    .hidden-li-style{
+        @apply border border-slate-600 w-[250px] bg-slate-400 px-2 py-2 rounded-xl hover:bg-slate-100
+    };
+    .hidden-drop-li-style{
+        @apply py-0.5 hover:bg-slate-300 rounded-xl cursor-pointer border border-slate-600
+    }
+   .bmi-medical-sharing{
+    @apply opacity-0 translate-y-[15px] transition-all duration-500
+   }
 }

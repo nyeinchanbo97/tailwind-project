@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+   <!-- NAVIGATION SECTION START HERE  -->
+
+
+    <!-- header and navigation  -->
+    <header>
+        <nav class="h-[80px] nav transition-all duration-500 relative mt-3">
+            <!-- flex start  -->
+            <div class="container m-auto nav border border-slate-600 rounded-xl bg-slate-200 h-full flex absolute left-full right-0 transition-all duration-1000">
+
+                <!-- first child  -->
+                <div class="w-1/3 max-lg:w-1/2 text-[35px] font-bold flex justify-center items-center gap-1">
+                    <span class="hover:scale-110 transition-all duration-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                        <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+                      </svg>
+                    </span>
+                    <span class="max-sm:hidden">han's Note</span>
+                </div>
+
+                <!-- second child -->
+                <div class="w-2/3  flex justify-center items-center max-lg:hidden">
+                    <ul class="flex flex-row justify-evenly gap-7 text-[15px] relative">
+                        <li class="nav-li-style"><a href="../src/index.html">BMI Calculation</a></li>
+
+                        <!-- dropdown btn  -->
+                        <li class="nav-li-style naviDropdownBtn cursor-pointer flex items-center gap-1 select-none">Knowledge Sharing 
+                            <span class="naviDropdownBtnLogo transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                            </span>
+                     
+                        <!-- dropdown -->
+                        <div class="w-[170px] h-[150px] bg-white absolute top-[50px] left-[150px] p-3 border border-slate-600 rounded-xl
+                        transition-all duration-500 ease-out naviDropdown opacity-0 pointer-events-none z-50 ">
+                            <ul class="flex flex-col gap-5 py-2 justify-evenly">
+                                <li><a class="pr-10 nav-drop-li-style" href="../src/medical.html">Medical</a></li>
+                                <li><a class="pr-10 nav-drop-li-style" href="#">General</a></li>
+                                <li><a class="pr-7  nav-drop-li-style" href="#">Historical</a></li>
+                            </ul>
+                        </div>
+                        <li class="nav-li-style"><a href="../src/contact.html">Contact Us</a></li>
+                        <li class="nav-li-style"><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- hidden child  -->
+                <div class=" lg:hidden max-lg:w-1/2 flex justify-end items-center pr-20 max-sm:justify-center max-sm:pr-0 menuBtn ">
+                    <span class="menuBtnLogo transition-all duration-1000">
+                         <svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    </span>
+                    <span class="opacity-0 absolute menuBtnLogo transition-all duration-1000">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                   </span>
+                </div>
+                
+            </div>
+        </nav>
+       
+    </header>
+
+    <!-- hidden menu  -->
+    <div class="fixed opacity-0 lg:hidden top-[100px]  h-full w-[100%] border border-slate-600 rounded-xl bg-slate-200 pl-[50px] pt-10  transition-all duration-500 menu">
+        <ul class="flex flex-col justify-evenly gap-7 text-[15px] relative text-xl">
+            <li class="hidden-li-style"><a href="../src/index.html">BMI Calculation</a></li>
+
+            <!-- dropdown btn  -->
+            <li class="hidden-li-style naviDropdownBtn cursor-pointer flex items-center gap-5 transition-all duration-300">Knowledge Sharing 
+              <span class="max-sm:hidden naviDropdownBtnLogo transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                    <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg>
+              </span>
+              <span class="sm:hidden naviDropdownBtnLogo transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                    <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                  </svg>
+              </span>
+            </li>
+            <!-- dropdown -->
+            <div class="w-[250px] h-[155px] absolute opacity-0 max-sm:absolute max-sm:pointer-events-none max-sm:top-[115px] max-sm:left-[15px] top-[75px] left-[255px]  p-2 py-3 text-md  rounded-xl  transition-all duration-500 ease-out naviDropdown">
+                <ul class="flex flex-col gap-2 max-sm:gap-2 items-center  bg-slate-200 rounded-xl py-3">
+                    <li ><a class=" px-16 hidden-drop-li-style" href="../src/medical.html">Medical</a></li>
+                    <li ><a class=" px-16 hidden-drop-li-style" href="#">General</a></li>
+                   <li ><a class=" px-14 hidden-drop-li-style" href="#">Historical</a></li>
+                </ul>
+            </div>
+
+            <li class="hidden-li-style"><a href="../src/contact.html">Contact Us</a></li>
+            <li class="hidden-li-style"><a href="#">About Us</a></li>
+        </ul>                           
+    </div>
+
+
+<!-- NAVIGATION SECTION END HERE  -->
+
+    <div class="container mx-auto home -translate-x-full transition-all duration-1000 mt-[20px] bg-slate-200 border border-slate-600 rounded-xl flex flex-row max-lg:flex-col justify-evenly items-center p-20 gap-20 max-sm:gap-5">
+        <div class="w-[450px] h-[350px] max-sm:scale-75 bg-slate-100 border border-slate-600 rounded-xl p-7 flex flex-col gap-7">
+            <h1 class="text-xl font-bold">Contact Info</h1>
+            <div class="flex items-center gap-4">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                </span>
+                <p>09987467855 , 09259539388</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                      </svg>
+                </span>
+                <p>aeiouncb@gmail.com</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg>
+                </span>
+                <p>NC Chan</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                      </svg>
+                </span>
+                <p>33st 83*84st , NO(345) ,Chan Aye Tarsan , Mandalay</p>
+            </div>
+        </div>
+
+        <div class="w-[450px] h-[350px] max-sm:scale-75 bg-slate-100 border border-slate-600 rounded-xl p-3 px-7 flex flex-col gap-3">
+           <h1 class="text-xl font-bold">Contact Form</h1>
+           <div>
+                <input type="text" id="success" class="bg-slate-50 border border-slate-500 text-slate-900 dark:text-slate-400 placeholder-slate-700 dark:placeholder-slate-500 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 block w-full p-2.5 dark:bg-gray-700 dark:border-slate-500" placeholder="Name">
+           </div>
+           <div>
+                <input type="text" id="success" class="bg-slate-50 border border-slate-500 text-slate-900 dark:text-slate-400 placeholder-slate-700 dark:placeholder-slate-500 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 block w-full p-2.5 dark:bg-gray-700 dark:border-slate-500" placeholder="Phone">
+            </div>
+            <div>
+                <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-slate-900 bg-slate-50 rounded-lg border border-slate-600 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Message ... "></textarea>
+            </div>
+            <div>
+                <button type="button" class="text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-slate-600 dark:hover:bg-slate-700 focus:outline-none dark:focus:ring-slate-800">Send Message</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+<script src="../src/contact.js"></script>
+</body>
+</html>

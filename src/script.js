@@ -46,7 +46,7 @@ dropdownBtn[1].addEventListener("click", ()=>{
         }else{
             if (navIsClose === true){
                 dropdown[1].style.opacity = "1";
-                dropdownBtn[1].style.marginBottom = "100px";
+                dropdownBtn[1].style.marginBottom = "110px";
                 dropdownBtnLogo[2].style.transform = "rotate(180deg)";
                 dropdown[1].style.pointerEvents = "auto";
                 // dropdown[1].style.left = "70px"
@@ -125,12 +125,12 @@ const bmiResult = document.getElementsByClassName("bmi-result")[0];
 
 bmiBtn.addEventListener("click", () => {
   const inches = (
-    parseInt(heightFeet.value) * 12 +
-    parseInt(heightInches.value)
+    parseFloat(heightFeet.value) * 12 +
+    parseFloat(heightInches.value)
   ).toFixed(2);
-  const pounds = parseInt(weight.value).toFixed(2);
+  const pounds = parseFloat(weight.value).toFixed(2);
   console.log(inches, pounds);
-  const values = (703 * (pounds / inches ** 2)).toFixed(2);
+  const values = (703 * (pounds / inches ** 2)).toFixed(1);
   if (values === "NaN") {
     // bmiResult.innerHTML = "Your BMI";
     alert("Fill your weight and height in the given input!");
@@ -150,9 +150,9 @@ const bmiBtnKg = document.getElementById("bmi-btn-kg");
 const bmiResultKg = document.getElementsByClassName("bmi-result-kg")[0];
 
 bmiBtnKg.addEventListener("click", () => {
-  const meter = (parseInt(heightCentimeter.value) / 100).toFixed(2);
-  const kilogram = parseInt(weightKg.value).toFixed(2);
-  const metricValue = (kilogram / meter ** 2).toFixed(2);
+  const meter = (parseFloat(heightCentimeter.value) / 100).toFixed(2);
+  const kilogram = parseFloat(weightKg.value).toFixed(2);
+  const metricValue = (kilogram / meter ** 2).toFixed(1);
   if (metricValue === "NaN") {
     // bmiResult.innerHTML = "Your BMI";
     alert("Fill your weight and height in the given input!");
@@ -220,6 +220,8 @@ for (let i=0; i<4; i++){
 // bmi window events 
 
   const bmiLoadAnimation = document.getElementsByClassName("bmiLoadAnimation");
+  // BMI MEDICAL 
+
 
   window.addEventListener("load",()=>{
     
@@ -259,13 +261,14 @@ for (let i=0; i<4; i++){
         standard_btn.style.bottom = "10px";
         metric_btn.style.bottom = "10px";
     }, 2200);
+    console.log("fkk you");
 })
 
 
 const mainBmiNote = document.getElementsByClassName("main-bmi-note");
 
 const scrollFunction2 = ()=>{
-    if (document.documentElement.scrollTop > 150){
+    if (document.documentElement.scrollTop > 85){
         mainBmiNote[0].style.opacity = "1";
         mainBmiNote[0].style.transform = "translateY(0)"
         mainBmiNote[1].style.opacity = "1";
@@ -279,6 +282,8 @@ const scrollFunction2 = ()=>{
     }
 }
 window.onscroll = function() {scrollFunction2()};
+
+
 
 
 
